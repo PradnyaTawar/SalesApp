@@ -7,7 +7,7 @@ const SaleModel = mongoose.model("SaleModel")
 const randomstring = require("randomstring");
 
 var bcrypt = require('bcryptjs');
-const { JWT_SECRET } = require('../config.env')
+const { JWT_SECRET } = require('../config.js')
 
 router.post("/registration", (req, res) => {
     const { firstName, lastName, email, password } = req.body;
