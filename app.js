@@ -6,7 +6,7 @@ const API_BASE_URL = process.env.API_BASE_URL;
 const PORT = process.env.PORT || 4000;
 const cors = require('cors')
 const mongoose = require('mongoose');
-const { MONGODB_URL } = require('./config.js')
+const { MONGODB_URL } = require('./config.env')
 
 global.__basedir = __dirname;
 mongoose.connect(MONGODB_URL);
