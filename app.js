@@ -1,4 +1,5 @@
 const express = require('express');
+require("dotenv").config();
 const app = express();
 var bodyParser = require("body-parser");
 const API_BASE_URL = process.env.API_BASE_URL;
